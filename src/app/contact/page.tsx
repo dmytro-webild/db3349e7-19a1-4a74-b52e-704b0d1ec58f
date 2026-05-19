@@ -43,13 +43,13 @@ export default function ContactPage() {
                         tag="Contact"
                         background={{ variant: "plain" }}
                         useInvertedBackground={false}
-                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=10"
                     />
                 </div>
                 <div id="footer" data-section="footer">
                     <FooterMedia
                         logoText="Coach"
-                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=11"
                         columns={[
                             { title: "Navigation", items: [{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }] },
                         ]}
