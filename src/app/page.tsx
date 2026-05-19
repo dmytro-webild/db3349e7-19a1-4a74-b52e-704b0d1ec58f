@@ -36,7 +36,8 @@ export default function BusinessCoachTemplatePage() {
             <ReactLenis root>
                 <NavbarLayoutFloatingInline
                     navItems={navItems}
-                    brandName="Coach"
+                    brandName="Innexus"
+                    logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/logo.png"
                     button={{ text: "Reservar una llamada", href: "#contact" }}
                 />
                 <HeroSplitDualMedia
@@ -167,7 +168,7 @@ export default function BusinessCoachTemplatePage() {
                     ]}
                 />
                 <FooterLogoEmphasis
-                    logoText="Coach"
+                    logoText="Innexus"
                     columns={[
                         {
                             items: [
