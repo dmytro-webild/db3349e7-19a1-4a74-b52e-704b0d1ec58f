@@ -1,21 +1,16 @@
 "use client";
 
 import ReactLenis from "lenis/react";
-import HeroSplitDualMedia from "@/components/sections/hero/HeroSplitDualMedia";
-import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
-import FeatureCardTwentyFive from "@/components/sections/feature/FeatureCardTwentyFive";
-import TestimonialCardSixteen from "@/components/sections/testimonial/TestimonialCardSixteen";
-import FaqSplitMedia from "@/components/sections/faq/FaqSplitMedia";
-import TeamCardTen from "@/components/sections/team/TeamCardTen";
-import ContactText from "@/components/sections/contact/ContactText";
-import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
+import HeroBillboardCarousel from "@/components/sections/hero/HeroBillboardCarousel";
+import NavbarStyleCentered from "@/components/navbar/NavbarStyleCentered/NavbarStyleCentered";
+import FeatureCardTwentyFour from "@/components/sections/feature/FeatureCardTwentyFour";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Sparkles, Target, Users, TrendingUp, Lightbulb } from "lucide-react";
 
 export default function BusinessCoachTemplatePage() {
     const navItems = [
-        { name: "About", id: "about" },
-        { name: "Services", id: "services" },
+        { name: "About", id: "/about" },
+        { name: "Services", id: "/services" },
         { name: "Pricing", id: "/pricing" },
         { name: "Contact", id: "/contact" },
     ];
@@ -27,51 +22,51 @@ export default function BusinessCoachTemplatePage() {
             borderRadius="rounded"
             contentWidth="medium"
             sizing="medium"
-            background="none"
+            background="circleGradient"
             cardStyle="glass-elevated"
-            primaryButtonStyle="shadow"
-            secondaryButtonStyle="solid"
-            headingFontWeight="medium"
+            primaryButtonStyle="gradient"
+            secondaryButtonStyle="glass"
+            headingFontWeight="normal"
         >
-            <ReactLenis root>
-                <NavbarLayoutFloatingInline
+            <div id="nav" data-section="nav">
+                <NavbarStyleCentered
                     navItems={navItems}
                     brandName="Coach"
                     button={{ text: "Book a Call", href: "/contact" }}
                 />
-                <HeroSplitDualMedia
-                    background={{ variant: "radial-gradient" }}
-                    tag="Business Coach"
-                    tagIcon={Sparkles}
-                    title="Transform your business with proven strategies"
-                    description="I help entrepreneurs and executives unlock their full potential and build thriving businesses through personalized coaching."
-                    mediaItems={[
-                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp", imageAlt: "Coaching session" },
-                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp", imageAlt: "Business growth" },
-                    ]}
-                    rating={5}
-                    ratingText="Rated by loving Clients"
-                    buttons={[
-                        { text: "Book a Call", href: "/contact" },
-                        { text: "Learn More", href: "#about" },
-                    ]}
-                    mediaAnimation="slide-up"
-                />
-                <FeatureCardTwentyFive
-                    tag="Services"
-                    tagIcon={Sparkles}
-                    title="How I Can Help You"
-                    description="Comprehensive coaching services designed to accelerate your growth"
-                    textboxLayout="default"
-                    animationType="slide-up"
-                    useInvertedBackground={false}
-                    features={[
-                        { title: "Business Strategy", description: "Crafting clear, actionable strategies that align with your goals for sustainable growth.", icon: Target },
-                        { title: "Leadership Development", description: "Build the leadership skills needed to inspire teams and drive organizational success.", icon: Users },
-                        { title: "Growth Acceleration", description: "Identify opportunities and implement systems to scale your business efficiently.", icon: TrendingUp },
-                        { title: "Mindset Coaching", description: "Overcome limiting beliefs and develop the mindset of a successful entrepreneur.", icon: Lightbulb },
-                    ]}
-                />
+            </div>
+            <ReactLenis root>
+                <div id="hero" data-section="hero">
+                    <HeroBillboardCarousel
+                        background={{ variant: "radial-gradient" }}
+                        tag="Business Coach"
+                        tagIcon={Sparkles}
+                        title="Transform your business with proven strategies"
+                        description="I help entrepreneurs and executives unlock their full potential and build thriving businesses through personalized coaching."
+                        mediaItems={[
+                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp", imageAlt: "Coaching session" },
+                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp", imageAlt: "Business growth" },
+                        ]}
+                        buttons={[{ text: "Book a Call", href: "/contact" }]}
+                    />
+                </div>
+                <div id="features" data-section="features">
+                    <FeatureCardTwentyFour
+                        tag="Services"
+                        tagIcon={Sparkles}
+                        title="How I Can Help You"
+                        description="Comprehensive coaching services designed to accelerate your growth"
+                        textboxLayout="default"
+                        animationType="slide-up"
+                        useInvertedBackground={false}
+                        features={[
+                            { id: "1", title: "Business Strategy", author: "Coach", description: "Crafting clear, actionable strategies that align with your goals for sustainable growth.", tags: ["Strategy"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
+                            { id: "2", title: "Leadership Development", author: "Coach", description: "Build the leadership skills needed to inspire teams and drive organizational success.", tags: ["Leadership"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
+                            { id: "3", title: "Growth Acceleration", author: "Coach", description: "Identify opportunities and implement systems to scale your business efficiently.", tags: ["Growth"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
+                            { id: "4", title: "Mindset Coaching", author: "Coach", description: "Overcome limiting beliefs and develop the mindset of a successful entrepreneur.", tags: ["Mindset"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
+                        ]}
+                    />
+                </div>
             </ReactLenis>
         </ThemeProvider>
     );
