@@ -53,7 +53,7 @@ export default function PricingPage() {
                 <div id="footer" data-section="footer">
                     <FooterMedia
                         logoText="Coach"
-                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=9"
                         columns={[
                             { title: "Navigation", items: [{ label: "Home", href: "/" }, { label: "Pricing", href: "/pricing" }] },
                         ]}
