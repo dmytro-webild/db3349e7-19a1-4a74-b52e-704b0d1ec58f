@@ -37,9 +37,9 @@ export default function ServicesPage() {
                         animationType="slide-up"
                         useInvertedBackground={false}
                         features={[
-                            { id: "1", title: "Bookkeeping", author: "Coach", description: "Accurate daily record keeping.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
-                            { id: "2", title: "Tax Planning", author: "Coach", description: "Strategic tax minimization strategies.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
-                            { id: "3", title: "Financial Reporting", author: "Coach", description: "Deep insights into your company performance.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" }
+                            { id: "1", title: "Bookkeeping", author: "Coach", description: "Accurate daily record keeping.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=6" },
+                            { id: "2", title: "Tax Planning", author: "Coach", description: "Strategic tax minimization strategies.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp?_wi=5" },
+                            { id: "3", title: "Financial Reporting", author: "Coach", description: "Deep insights into your company performance.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=7" }
                         ]}
                     />
                 </div>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
             <div id="footer" data-section="footer">
                 <FooterMedia
                     logoText="Coach"
-                    imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                    imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=8"
                     columns={[{ title: "Links", items: [{ label: "Home", href: "/" }, { label: "About", href: "/about" }] }]}
                 />
             </div>

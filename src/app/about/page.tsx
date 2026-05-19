@@ -38,8 +38,8 @@ export default function AboutPage() {
                         useInvertedBackground={false}
                         gridVariant="three-columns-all-equal-width"
                         members={[
-                            { id: "1", name: "John Anderson", role: "Founder & CEO", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
-                            { id: "2", name: "Lisa Thompson", role: "Chief Strategy Officer", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
+                            { id: "1", name: "John Anderson", role: "Founder & CEO", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=4" },
+                            { id: "2", name: "Lisa Thompson", role: "Chief Strategy Officer", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp?_wi=4" },
                         ]}
                     />
                 </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <div id="footer" data-section="footer">
                 <FooterMedia
                     logoText="Coach"
-                    imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                    imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=5"
                     columns={[{ title: "Links", items: [{ label: "Home", href: "/" }, { label: "Services", href: "/services" }] }]}
                 />
             </div>
