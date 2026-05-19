@@ -14,10 +14,10 @@ import { Sparkles, Target, Users, TrendingUp, Lightbulb } from "lucide-react";
 
 export default function BusinessCoachTemplatePage() {
     const navItems = [
-        { name: "About", id: "about" },
-        { name: "Services", id: "services" },
-        { name: "Testimonials", id: "testimonials" },
-        { name: "Contact", id: "contact" },
+        { name: "Sobre mí", id: "about" },
+        { name: "Servicios", id: "services" },
+        { name: "Testimonios", id: "testimonials" },
+        { name: "Contacto", id: "contact" },
     ];
 
     return (
@@ -37,179 +37,133 @@ export default function BusinessCoachTemplatePage() {
                 <NavbarLayoutFloatingInline
                     navItems={navItems}
                     brandName="Coach"
-                    button={{ text: "Book a Call", href: "#contact" }}
+                    button={{ text: "Reservar una llamada", href: "#contact" }}
                 />
                 <HeroSplitDualMedia
                     background={{ variant: "radial-gradient" }}
                     tag="Business Coach"
                     tagIcon={Sparkles}
-                    title="Transform your business with proven strategies"
-                    description="I help entrepreneurs and executives unlock their full potential and build thriving businesses through personalized coaching."
+                    title="Transforma tu negocio con estrategias probadas"
+                    description="Ayudo a emprendedores y ejecutivos a desbloquear todo su potencial y construir negocios prósperos mediante coaching personalizado."
                     mediaItems={[
-                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp", imageAlt: "Coaching session" },
-                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp", imageAlt: "Business growth" },
+                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp", imageAlt: "Sesión de coaching" },
+                        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp", imageAlt: "Crecimiento de negocio" },
                     ]}
                     rating={5}
-                    ratingText="Rated by loving Clients"
+                    ratingText="Valorado por clientes satisfechos"
                     buttons={[
-                        { text: "Book a Call", href: "#" },
-                        { text: "Learn More", href: "#" },
+                        { text: "Reservar una llamada", href: "#contact" },
+                        { text: "Más información", href: "#about" },
                     ]}
                     mediaAnimation="slide-up"
                 />
                 <FeatureCardTwentyFive
-                    tag="Services"
+                    tag="Servicios"
                     tagIcon={Sparkles}
-                    title="How I Can Help You"
-                    description="Comprehensive coaching services designed to accelerate your growth"
+                    title="Cómo puedo ayudarte"
+                    description="Servicios de coaching integrales diseñados para acelerar tu crecimiento."
                     textboxLayout="default"
                     animationType="slide-up"
                     useInvertedBackground={false}
                     features={[
                         {
-                            title: "Business Strategy",
-                            description: "Crafting clear, actionable strategies that align with your goals for sustainable growth.",
-                            icon: Target,
+                            title: "Estrategia Empresarial",                            description: "Elaboración de estrategias claras y accionables alineadas con tus objetivos para un crecimiento sostenible.",                            icon: Target,
                             mediaItems: [
-                                { imageSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop", imageAlt: "Team collaborating around a whiteboard" },
-                                { imageSrc: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop", imageAlt: "Strategy meeting presentation" },
+                                { imageSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop", imageAlt: "Equipo colaborando" },
+                                { imageSrc: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop", imageAlt: "Reunión de estrategia" },
                             ],
                         },
                         {
-                            title: "Leadership Development",
-                            description: "Build the leadership skills needed to inspire teams and drive organizational success.",
-                            icon: Users,
+                            title: "Desarrollo de Liderazgo",                            description: "Desarrolla las habilidades de liderazgo necesarias para inspirar equipos e impulsar el éxito organizacional.",                            icon: Users,
                             mediaItems: [
-                                { imageSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop", imageAlt: "Professional team meeting" },
-                                { imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop", imageAlt: "Confident business leader" },
+                                { imageSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop", imageAlt: "Reunión de equipo" },
+                                { imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop", imageAlt: "Líder de negocios" },
                             ],
                         },
                         {
-                            title: "Growth Acceleration",
-                            description: "Identify opportunities and implement systems to scale your business efficiently.",
-                            icon: TrendingUp,
+                            title: "Aceleración de Crecimiento",                            description: "Identifica oportunidades e implementa sistemas para escalar tu negocio de manera eficiente.",                            icon: TrendingUp,
                             mediaItems: [
-                                { imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", imageAlt: "Business analytics dashboard" },
-                                { imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", imageAlt: "Growth metrics on screen" },
+                                { imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", imageAlt: "Dashboard de analítica" },
+                                { imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", imageAlt: "Métricas de crecimiento" },
                             ],
                         },
                         {
-                            title: "Mindset Coaching",
-                            description: "Overcome limiting beliefs and develop the mindset of a successful entrepreneur.",
-                            icon: Lightbulb,
+                            title: "Coaching de Mentalidad",                            description: "Supera las creencias limitantes y desarrolla la mentalidad de un emprendedor exitoso.",                            icon: Lightbulb,
                             mediaItems: [
-                                { imageSrc: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&h=600&fit=crop", imageAlt: "Mindfulness and focus" },
-                                { imageSrc: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop", imageAlt: "One-on-one coaching session" },
+                                { imageSrc: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&h=600&fit=crop", imageAlt: "Mindfulness y enfoque" },
+                                { imageSrc: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop", imageAlt: "Sesión de coaching individual" },
                             ],
                         },
                     ]}
                 />
                 <TestimonialCardSixteen
-                    tag="Testimonials"
+                    tag="Testimonios"
                     tagIcon={Sparkles}
-                    title="What My Clients Say"
-                    description="Hear from entrepreneurs who've transformed their businesses"
+                    title="Lo que dicen mis clientes"
+                    description="Historias de emprendedores que han transformado sus negocios."
                     textboxLayout="default"
                     animationType="slide-up"
                     useInvertedBackground={false}
                     testimonials={[
                         {
-                            id: "1",
-                            name: "Sarah Mitchell",
-                            role: "Founder & CEO",
-                            company: "TechStart Inc",
-                            rating: 5,
-                            imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
-                            imageAlt: "Sarah Mitchell",
-                        },
+                            id: "1",                            name: "Sarah Mitchell",                            role: "Founder & CEO",                            company: "TechStart Inc",                            rating: 5,
+                            imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",                            imageAlt: "Sarah Mitchell"},
                         {
-                            id: "2",
-                            name: "Michael Chen",
-                            role: "Managing Director",
-                            company: "Growth Partners",
-                            rating: 5,
-                            imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-                            imageAlt: "Michael Chen",
-                        },
+                            id: "2",                            name: "Michael Chen",                            role: "Managing Director",                            company: "Growth Partners",                            rating: 5,
+                            imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",                            imageAlt: "Michael Chen"},
                         {
-                            id: "3",
-                            name: "Emily Rodriguez",
-                            role: "Business Owner",
-                            company: "Creative Studios",
-                            rating: 5,
-                            imageSrc: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
-                            imageAlt: "Emily Rodriguez",
-                        },
+                            id: "3",                            name: "Emily Rodriguez",                            role: "Business Owner",                            company: "Creative Studios",                            rating: 5,
+                            imageSrc: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",                            imageAlt: "Emily Rodriguez"},
                     ]}
                     kpiItems={[
-                        { value: "200+", label: "Clients coached" },
-                        { value: "95%", label: "Success rate" },
-                        { value: "12+", label: "Years experience" },
+                        { value: "200+", label: "Clientes guiados" },
+                        { value: "95%", label: "Tasa de éxito" },
+                        { value: "12+", label: "Años de experiencia" },
                     ]}
                 />
                 <TeamCardTen
-                    title="Get to know the experienced coaches who will personally guide your entire business transformation journey"
-                    tag="About"
+                    title="Conoce a los coaches experimentados que guiarán personalmente tu transformación empresarial"
+                    tag="Sobre mí"
                     membersAnimation="slide-up"
                     memberVariant="card"
                     useInvertedBackground={false}
                     members={[
                         {
-                            id: "1",
-                            name: "John Anderson",
-                            imageSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-                            imageAlt: "John Anderson - Business Coach",
-                        },
+                            id: "1",                            name: "John Anderson",                            imageSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",                            imageAlt: "John Anderson - Business Coach"},
                         {
-                            id: "2",
-                            name: "Lisa Thompson",
-                            imageSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
-                            imageAlt: "Lisa Thompson - Executive Coach",
-                        },
+                            id: "2",                            name: "Lisa Thompson",                            imageSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",                            imageAlt: "Lisa Thompson - Executive Coach"},
                     ]}
                 />
                 <FaqSplitMedia
                     tag="FAQ"
                     tagIcon={Sparkles}
-                    title="Frequently Asked Questions"
-                    description="Get answers to common questions about my coaching services"
+                    title="Preguntas Frecuentes"
+                    description="Respuestas a las dudas más comunes sobre mis servicios de coaching."
                     textboxLayout="default"
                     faqsAnimation="slide-up"
                     mediaAnimation="slide-up"
                     useInvertedBackground={false}
                     imageSrc="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
-                    imageAlt="Business coaching consultation"
+                    imageAlt="Consulta de coaching"
                     mediaPosition="right"
                     faqs={[
                         {
-                            id: "1",
-                            title: "What types of businesses do you work with?",
-                            content: "I work with entrepreneurs, startups, and established businesses across various industries. My coaching is tailored to your specific challenges and goals, whether you're just starting out or scaling to the next level.",
-                        },
+                            id: "1",                            title: "¿Con qué tipos de negocios trabajas?",                            content: "Trabajo con emprendedores, startups y negocios establecidos en diversos sectores. Mi coaching es personalizado según tus desafíos y objetivos específicos."},
                         {
-                            id: "2",
-                            title: "How long is a typical coaching engagement?",
-                            content: "Most clients see significant results within 3-6 months of consistent coaching. However, the duration depends on your goals and challenges. We'll create a customized plan during our initial consultation.",
-                        },
+                            id: "2",                            title: "¿Cuánto dura un proceso de coaching típico?",                            content: "La mayoría de los clientes ven resultados significativos entre 3 y 6 meses. La duración depende de tus metas."},
                         {
-                            id: "3",
-                            title: "What can I expect from our sessions?",
-                            content: "Each session is a focused, action-oriented conversation where we'll work through your challenges, develop strategies, and set clear action items. You'll leave every session with concrete steps to implement.",
-                        },
+                            id: "3",                            title: "¿Qué puedo esperar de nuestras sesiones?",                            content: "Cada sesión es una conversación enfocada en la acción. Saldrás de cada reunión con pasos concretos para implementar."},
                         {
-                            id: "4",
-                            title: "Do you offer virtual coaching sessions?",
-                            content: "Yes, I offer both in-person and virtual coaching sessions via Zoom. Virtual sessions provide the same level of engagement and results, making coaching accessible regardless of your location.",
-                        },
+                            id: "4",                            title: "¿Ofreces sesiones virtuales?",                            content: "Sí, ofrezco sesiones tanto presenciales como virtuales vía Zoom para mayor comodidad y alcance."},
                     ]}
                 />
                 <ContactText
-                    text="Ready to transform your business? Let's start your journey to success today."
+                    text="¿Listo para transformar tu negocio? Comencemos tu camino hacia el éxito hoy mismo."
                     background={{ variant: "plain" }}
                     useInvertedBackground={false}
                     buttons={[
-                        { text: "Book a Free Consultation", href: "#" },
-                        { text: "Learn More", href: "#" },
+                        { text: "Reservar consulta gratuita", href: "#contact" },
+                        { text: "Más información", href: "#" },
                     ]}
                 />
                 <FooterLogoEmphasis
@@ -217,16 +171,16 @@ export default function BusinessCoachTemplatePage() {
                     columns={[
                         {
                             items: [
-                                { label: "About", href: "#about" },
-                                { label: "Services", href: "#services" },
-                                { label: "Testimonials", href: "#testimonials" },
+                                { label: "Sobre mí", href: "#about" },
+                                { label: "Servicios", href: "#services" },
+                                { label: "Testimonios", href: "#testimonials" },
                             ],
                         },
                         {
                             items: [
                                 { label: "FAQ", href: "#faq" },
-                                { label: "Contact", href: "#contact" },
-                                { label: "Book a Call", href: "#" },
+                                { label: "Contacto", href: "#contact" },
+                                { label: "Reserva", href: "#contact" },
                             ],
                         },
                         {
