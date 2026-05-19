@@ -1,9 +1,9 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
-import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
-import FeatureCardTen from "@/components/sections/feature/FeatureCardTen";
+import NavbarStyleCentered from "@/components/navbar/NavbarStyleCentered/NavbarStyleCentered";
+import FooterMedia from "@/components/sections/footer/FooterMedia";
+import FeatureCardTwentyFour from "@/components/sections/feature/FeatureCardTwentyFour";
 
 export default function ServicesPage() {
     const navItems = [
@@ -13,25 +13,44 @@ export default function ServicesPage() {
     ];
 
     return (
-        <ThemeProvider>
-            <NavbarLayoutFloatingInline navItems={navItems} brandName="Coach" />
+        <ThemeProvider
+            defaultButtonVariant="text-stagger"
+            defaultTextAnimation="entrance-slide"
+            borderRadius="rounded"
+            contentWidth="medium"
+            sizing="medium"
+            background="circleGradient"
+            cardStyle="glass-elevated"
+            primaryButtonStyle="gradient"
+            secondaryButtonStyle="glass"
+            headingFontWeight="normal"
+        >
+            <div id="nav" data-section="nav">
+                <NavbarStyleCentered navItems={navItems} brandName="Coach" />
+            </div>
             <main className="pt-24 pb-12">
-                <FeatureCardTen 
-                    title="Our Accounting Services"
-                    description="Reliable financial management for growing businesses."
-                    textboxLayout="default"
-                    animationType="slide-up"
-                    features={[
-                        { title: "Bookkeeping", description: "Accurate daily record keeping.", items: [], reverse: false },
-                        { title: "Tax Planning", description: "Strategic tax minimization strategies.", items: [], reverse: true },
-                        { title: "Financial Reporting", description: "Deep insights into your company performance.", items: [], reverse: false }
-                    ]}
-                />
+                <div id="features" data-section="features">
+                    <FeatureCardTwentyFour
+                        title="Our Accounting Services"
+                        description="Reliable financial management for growing businesses."
+                        textboxLayout="default"
+                        animationType="slide-up"
+                        useInvertedBackground={false}
+                        features={[
+                            { id: "1", title: "Bookkeeping", author: "Coach", description: "Accurate daily record keeping.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
+                            { id: "2", title: "Tax Planning", author: "Coach", description: "Strategic tax minimization strategies.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
+                            { id: "3", title: "Financial Reporting", author: "Coach", description: "Deep insights into your company performance.", tags: [], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" }
+                        ]}
+                    />
+                </div>
             </main>
-            <FooterLogoEmphasis
-                logoText="Coach"
-                columns={[{ title: "Links", items: [{ label: "Home", href: "/" }, { label: "About", href: "/about" }] }]}
-            />
+            <div id="footer" data-section="footer">
+                <FooterMedia
+                    logoText="Coach"
+                    imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                    columns={[{ title: "Links", items: [{ label: "Home", href: "/" }, { label: "About", href: "/about" }] }]}
+                />
+            </div>
         </ThemeProvider>
     );
 }
