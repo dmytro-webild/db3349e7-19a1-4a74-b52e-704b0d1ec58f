@@ -44,8 +44,8 @@ export default function BusinessCoachTemplatePage() {
                         title="Transform your business with proven strategies"
                         description="I help entrepreneurs and executives unlock their full potential and build thriving businesses through personalized coaching."
                         mediaItems={[
-                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp", imageAlt: "Coaching session" },
-                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp", imageAlt: "Business growth" },
+                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=1", imageAlt: "Coaching session" },
+                            { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp?_wi=1", imageAlt: "Business growth" },
                         ]}
                         buttons={[{ text: "Book a Call", href: "/contact" }]}
                     />
@@ -60,10 +60,10 @@ export default function BusinessCoachTemplatePage() {
                         animationType="slide-up"
                         useInvertedBackground={false}
                         features={[
-                            { id: "1", title: "Business Strategy", author: "Coach", description: "Crafting clear, actionable strategies that align with your goals for sustainable growth.", tags: ["Strategy"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
-                            { id: "2", title: "Leadership Development", author: "Coach", description: "Build the leadership skills needed to inspire teams and drive organizational success.", tags: ["Leadership"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
-                            { id: "3", title: "Growth Acceleration", author: "Coach", description: "Identify opportunities and implement systems to scale your business efficiently.", tags: ["Growth"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp" },
-                            { id: "4", title: "Mindset Coaching", author: "Coach", description: "Overcome limiting beliefs and develop the mindset of a successful entrepreneur.", tags: ["Mindset"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp" },
+                            { id: "1", title: "Business Strategy", author: "Coach", description: "Crafting clear, actionable strategies that align with your goals for sustainable growth.", tags: ["Strategy"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=2" },
+                            { id: "2", title: "Leadership Development", author: "Coach", description: "Build the leadership skills needed to inspire teams and drive organizational success.", tags: ["Leadership"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp?_wi=2" },
+                            { id: "3", title: "Growth Acceleration", author: "Coach", description: "Identify opportunities and implement systems to scale your business efficiently.", tags: ["Growth"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp?_wi=3" },
+                            { id: "4", title: "Mindset Coaching", author: "Coach", description: "Overcome limiting beliefs and develop the mindset of a successful entrepreneur.", tags: ["Mindset"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero2.webp?_wi=3" },
                         ]}
                     />
                 </div>
