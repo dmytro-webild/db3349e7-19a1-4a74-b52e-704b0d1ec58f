@@ -1,15 +1,16 @@
 "use client";
 
 import ReactLenis from "lenis/react";
-import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
-import ContactCenter from "@/components/sections/contact/ContactCenter";
-import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
+import NavbarStyleCentered from "@/components/navbar/NavbarStyleCentered/NavbarStyleCentered";
+import ContactSplit from "@/components/sections/contact/ContactSplit";
+import FooterMedia from "@/components/sections/footer/FooterMedia";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 
 export default function ContactPage() {
     const navItems = [
-        { name: "About", id: "/#about" },
-        { name: "Services", id: "/#services" },
+        { name: "Home", id: "/" },
+        { name: "About", id: "/about" },
+        { name: "Services", id: "/services" },
         { name: "Pricing", id: "/pricing" },
         { name: "Contact", id: "/contact" },
     ];
@@ -28,24 +29,32 @@ export default function ContactPage() {
             headingFontWeight="medium"
         >
             <ReactLenis root>
-                <NavbarLayoutFloatingInline
-                    navItems={navItems}
-                    brandName="Coach"
-                    button={{ text: "Book a Call", href: "/contact" }}
-                />
-                <ContactCenter
-                    title="Let's Connect"
-                    description="Reach out to discuss your goals or learn more about my coaching programs. I'm here to help."
-                    tag="Contact"
-                    background={{ variant: "plain" }}
-                />
-                <FooterLogoEmphasis
-                    logoText="Coach"
-                    columns={[
-                        { items: [{ label: "About", href: "/#about" }, { label: "Services", href: "/#services" }] },
-                        { items: [{ label: "Pricing", href: "/pricing" }, { label: "Contact", href: "/contact" }] },
-                    ]}
-                />
+                <div id="nav" data-section="nav">
+                    <NavbarStyleCentered
+                        navItems={navItems}
+                        brandName="Coach"
+                        button={{ text: "Book a Call", href: "/contact" }}
+                    />
+                </div>
+                <div id="contact" data-section="contact">
+                    <ContactSplit
+                        title="Let's Connect"
+                        description="Reach out to discuss your goals or learn more about my coaching programs. I'm here to help."
+                        tag="Contact"
+                        background={{ variant: "plain" }}
+                        useInvertedBackground={false}
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                    />
+                </div>
+                <div id="footer" data-section="footer">
+                    <FooterMedia
+                        logoText="Coach"
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/business-coach/hero/hero1.webp"
+                        columns={[
+                            { title: "Navigation", items: [{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }] },
+                        ]}
+                    />
+                </div>
             </ReactLenis>
         </ThemeProvider>
     );
