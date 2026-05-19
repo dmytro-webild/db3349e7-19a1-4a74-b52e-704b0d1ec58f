@@ -47,6 +47,8 @@ export default function BusinessCoachTemplatePage() {
                         tagIcon={Sparkles}
                         title="Servicios contables, tributarios y consultoría empresarial"
                         description="En Innexus potenciamos el crecimiento de pymes, startups y grandes empresas con un acompañamiento integral y profesional en sus finanzas y estrategia."
+                        rating={5}
+                        ratingText="4.9/5 basado en 200+ clientes"
                         mediaItems={[
                             { imageSrc: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop", imageAlt: "Contabilidad profesional" },
                             { imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", imageAlt: "Consultoría empresarial" },
